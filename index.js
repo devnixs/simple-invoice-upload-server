@@ -29,6 +29,6 @@ app.post('/api/invoice', upload.single('file'), function (req, res, next) {
 })
 
 var port = process.env.PORT || 5500;
-app.listen(function () {
+app.listen(port, function () {
     console.log('Example app listening on port ' + port + '!')
 })
